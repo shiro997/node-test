@@ -12,11 +12,11 @@ app.use(helmet());
 //Shiro997-Yggdrasil
 //kS8nCrUM8L3kMnFB
 //mongodb+srv://Shiro997-Yggdrasil:kS8nCrUM8L3kMnFB@cluster0.eabutku.mongodb.net/
-mongoose.connect('mongodb+srv://Shiro997-Yggdrasil:kS8nCrUM8L3kMnFB@cluster0.eabutku.mongodb.net/', {
+/*mongoose.connect('mongodb+srv://Shiro997-Yggdrasil:kS8nCrUM8L3kMnFB@cluster0.eabutku.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
+*/
 
 
 const usrSchema = new mongoose.Schema({
