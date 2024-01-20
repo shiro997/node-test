@@ -19,6 +19,7 @@ app.post('/user',controller.createUser);
 app.put('/user',controller.updateUser);
 app.delete('/user/:id',controller.deleteUser);
 app.post('/login',controller.login);
+app.get('/catalog/user-type',controller.getUserTypes);
 
 app.listen(PORT, () => {
   console.log(`Servidor en ejecución en el puerto ${PORT}`);

@@ -17,7 +17,7 @@ const login = async (req,res) => {
     else{
       bcrypt.compare(Password,usr.Password).then((isMatch)=>{
         if(isMatch){
-          const {Name,Email,Age} = usr;
+          const {Name,Email,Age,ProfilePhoto,_id} = usr;
 
           token = jwt.sign({
             Name, Email,exp: Date.now()+ 300*1000
@@ -26,7 +26,7 @@ const login = async (req,res) => {
           res.json({
             msj:'Usuario logeado correctamente',
             User:{
-              Name,Email,Age
+              Name,Email,Age,ProfilePhoto,_id
             },
             Token: token
           });

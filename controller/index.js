@@ -4,6 +4,7 @@ const getUserById = require('./user.get.id');
 const updateUser = require('./user.update');
 const deleteUser = require ('./user.delete');
 const login = require ('./login.controller');
+const getUserTypes = require('./catalog.controller');
 
 module.exports = {
   createUser,
@@ -11,5 +12,6 @@ module.exports = {
   getUserById,
   updateUser,
   deleteUser,
-  login
+  login,
+  getUserTypes,
 };
